@@ -1,0 +1,132 @@
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+.wrapper {
+  font-size: 0.12rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5; }
+
+.header {
+  flex-shrink: 0;
+  height: 0.5rem;
+  background-color: skyblue; }
+  .header h1 {
+    font-size: 0.18rem;
+    color: #fff;
+    line-height: 0.5rem;
+    text-align: center; }
+
+.content {
+  flex: 1;
+  overflow-y: scroll; }
+  .content dl {
+    margin-top: 0.1rem;
+    display: flex;
+    padding-left: 0.15rem;
+    padding-right: 0.15rem; }
+    .content dl dt {
+      width: 1.3rem;
+      height: 1rem;
+      padding-top: 0.05rem; }
+      .content dl dt .left {
+        float: left;
+        width: 0.3rem;
+        line-height: 1rem; }
+        .content dl dt .left .choice {
+          width: 0.1rem;
+          height: 0.1rem;
+          display: block;
+          border: 1px solid skyblue;
+          border-radius: 50%;
+          margin-top: 0.45rem;
+          cursor: pointer; }
+        .content dl dt .left .choice.on {
+          background-color: skyblue; }
+      .content dl dt .right {
+        float: right;
+        width: 1rem;
+        height: 1rem;
+        border: 1px solid skyblue; }
+        .content dl dt .right img {
+          width: 100%;
+          height: 100%; }
+    .content dl dd {
+      flex: 1;
+      padding-left: 0.1rem;
+      position: relative; }
+      .content dl dd h2 {
+        padding-top: 0.1rem;
+        font-size: 0.16rem;
+        line-height: 0.32rem; }
+      .content dl dd p {
+        line-height: 0.28rem; }
+        .content dl dd p:nth-child(3) {
+          color: red; }
+      .content dl dd > span {
+        position: absolute;
+        width: 0.2rem;
+        height: 0.2rem;
+        border-radius: 50%;
+        background-color: skyblue;
+        color: #fff;
+        text-align: center;
+        line-height: 0.2rem;
+        right: 0;
+        top: 0.2rem;
+        cursor: pointer; }
+      .content dl dd .number {
+        position: absolute;
+        right: 0;
+        bottom: 0; }
+        .content dl dd .number input {
+          border: 1px solid skyblue; }
+        .content dl dd .number span {
+          display: inline-block;
+          cursor: pointer;
+          width: 0.2rem;
+          height: 0.32rem;
+          text-align: center;
+          line-height: 0.32rem;
+          background-color: skyblue;
+          color: #fff; }
+
+.footer {
+  flex-shrink: 0;
+  height: 0.8rem; }
+  .footer .all {
+    display: flex;
+    height: 0.3rem;
+    vertical-align: bottom;
+    line-height: 0.3rem;
+    background-color: #fff; }
+    .footer .all p {
+      flex-grow: 1;
+      text-align: center; }
+      .footer .all p .alls {
+        display: inline-block;
+        width: 0.1rem;
+        height: 0.1rem;
+        border: 1px solid skyblue;
+        border-radius: 50%;
+        cursor: pointer;
+        margin-right: 0.1rem; }
+      .footer .all p .alls.allson {
+        background-color: skyblue; }
+  .footer ul {
+    display: flex;
+    line-height: 0.5rem; }
+    .footer ul li {
+      flex-grow: 1;
+      text-align: center; }
+    .footer ul li.on {
+      background-color: skyblue;
+      color: #fff; }
+
+/*# sourceMappingURL=style.css.map */

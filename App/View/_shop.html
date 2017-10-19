@@ -1,0 +1,26 @@
+<div class="wrapper">
+    <header class="header">
+        <h1>购物车</h1>
+    </header>
+    <section class="content">
+        <shop ng-repeat="item in products"
+              item="item"
+              index="{{$index}}"></shop>
+
+    </section>
+    <footer class="footer">
+        <div class="all">
+            <p><span class="alls" ng-class="{allson:flag}" ng-click="checkAll()"></span>全选</p>
+
+            <p>合计：￥<span></span>（不含运费）</p>
+
+            <p>结算()</p>
+        </div>
+        <ul>
+            <li>首页</li>
+            <li>微淘</li>
+            <li class="on">购物车</li>
+            <li>我的</li>
+        </ul>
+    </footer>
+</div>
